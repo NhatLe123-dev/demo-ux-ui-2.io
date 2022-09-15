@@ -49,8 +49,13 @@
     </div>
     <div id="page-2" class="row vh-100">
         <div class="d-flex justify-content-around align-items-center inner">
-            <button class="btn-css">Next</button>
+            <button class="btn-css" onclick="changePage2()">Next</button>
             <button class="btn-css none-btn">Next</button>
+        </div>
+    </div>
+    <div id="page-3" class="row vh-100">
+        <div class="d-flex justify-content-around align-items-center inner">
+            <span>Thank you!!!</span>
         </div>
     </div>
     <script>
@@ -60,6 +65,13 @@
             page1.style.display = "none";
             var page2 = document.getElementById('page-2');
             page2.style.display = "flex";
+        }
+        function changePage2(){
+            console.log('a')
+            var page2 = document.getElementById('page-2');
+            page2.style.display = "none";
+            var page3 = document.getElementById('page-3');
+            page3.style.display = "flex";
         }
     </script>
 </body>
